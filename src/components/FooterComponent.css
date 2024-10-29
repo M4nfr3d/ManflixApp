@@ -1,0 +1,10 @@
+.footer {
+    min-height: 10rem;
+    background-color: black;
+    color: var(--colorGrisClaro);
+    text-align: center;
+    p {
+        margin-top: 0;
+        padding: 2rem;
+    }
+}

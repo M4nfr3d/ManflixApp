@@ -1,0 +1,23 @@
+.containerMovies {
+    height: 70rem;
+}
+.containerCard {
+    margin: 0 auto;
+    padding: 9rem;
+    background-image: linear-gradient(to top, var(--azulClaro) 5%, var(--azulOscuro) 20%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 4rem;
+    justify-content: center;
+}
+
+@media (max-width: 560px) {
+    .containerCard {
+        grid-template-columns: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .containerCard {
+        margin-top: 12rem;
+    }
+}
