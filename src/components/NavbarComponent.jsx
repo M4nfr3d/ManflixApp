@@ -1,5 +1,4 @@
 import { ArrowDropDown, Search, Notifications } from "@material-ui/icons";
-import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./NavbarComponent.css";
 
@@ -12,7 +11,7 @@ export function NavbarComponent() {
             src="https://i.ibb.co/1vCS7fd/manflix-Logo.png"
             alt="manflix logo"
           />
-          <Link to="/contextmoviecard">
+          <Link to="/dashboard/">
             <span>Películas</span>
           </Link>
         </div>
@@ -25,7 +24,7 @@ export function NavbarComponent() {
           <div className="dropdown">
             <span>Opciones</span>
             <div className="content">
-              <Link to="/contextmoviecard">Configuración</Link>
+              <Link to="contextmoviecard">Configuración</Link>
               <Link to="/">Salir</Link>
             </div>
           </div>

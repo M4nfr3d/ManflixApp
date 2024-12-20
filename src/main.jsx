@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { LoginProvider } from './util/LoginProvider'
-import { FooterComponent } from './components/FooterComponent'
 import App from './App'
 import './index.css'
 
@@ -9,7 +8,6 @@ import './index.css'
   <StrictMode>
     <LoginProvider>
       <App />
-      <FooterComponent/>
     </LoginProvider>
   </StrictMode>,
 )

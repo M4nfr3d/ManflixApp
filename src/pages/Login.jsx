@@ -1,13 +1,10 @@
 import "./login.css";
 import { useLoginContext, useLoginToogleContext } from "../util/LoginProvider";
-import { ContextMovieCard } from "./ContextMovieCard";
 import { Link } from "react-router-dom";
 
 export function LoginPage() {
   const user = useLoginContext();
   const cambiaSesion = useLoginToogleContext();
-
-  console.log(user)
 
   return (
     <div className="login">
@@ -27,7 +24,7 @@ export function LoginPage() {
               <legend>Inicia sesión</legend>
               <input type="email" disabled placeholder="Tu correo" />
               <input type="password" disabled placeholder="Contraseña" />
-              <Link type="button" className="loginButton" onClick={cambiaSesion} to="/contextmoviecard"><p>Entrar</p></Link>
+              <Link type="button" className="loginButton" onClick={cambiaSesion} to="/dashboard/"><p>Entrar</p></Link>
             </fieldset>
             <div className="login-container-footer">
               <span>
