@@ -25,7 +25,6 @@ export function MovieDetails() {
     getMovie()
   }, [movieId]);
 
-  console.log(movie)
   const imageUrl = getMovieImg(movie.poster_path, 400);
 
   return (

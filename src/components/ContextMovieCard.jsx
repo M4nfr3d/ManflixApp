@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 
 export function ContextMovieCard() {
     const {movies} = useFetchMovies();
-    console.log(movies)
+    // console.log(movies)
     return(
         <div className="containerCard">
             {movies.map((movie)=>(
