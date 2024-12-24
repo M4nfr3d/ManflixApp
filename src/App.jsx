@@ -10,7 +10,9 @@ function App() {
 
   return (<>
     <LoginProvider />
-    <MyRoutes />
+    <MyRoutes>
+      <LoginPage />
+    </MyRoutes>
   </>
   )
 }
