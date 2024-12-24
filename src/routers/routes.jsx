@@ -11,6 +11,7 @@ export function MyRoutes() {
                     <Route index element={<ContextMovieCard />} />
                     <Route path="moviedetails/:movieId" element={<MovieDetails />} />
                 </Route>
+                <Route path="*" element={<LoginPage />}/>
             </Routes>
         </Router>
     )
