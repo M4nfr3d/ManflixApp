@@ -7,3 +7,16 @@ _Para ejecutar la aplicacion:
 _La API que se consume es de una api de peliculas llamada TMDB
 
 ¡¡Todavia hay cosas por mejorar y aprender :D!!
+
+# Para desplegar la pagina en gitHub pages
+_En el package.json debemos agregar la propiedad: 
+{
+    "homepage": "https://(usuarioGitHub).github.io/(NombreRepositorio)",
+}
+_Si estar usando BrowserRouter debemos cambiarlo por HashRouter, esto debido
+a que GitHub pages no maneja un servidor backend para manejar las rutas
+
+_Al final reconstruye la aplicacion: yarn build
+
+
+

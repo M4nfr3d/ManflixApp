@@ -6,7 +6,7 @@ export function MyRoutes() {
     return(
         <Router>
             <Routes>
-                <Route index element={<LoginPage/>} />
+                <Route path="/" element={<LoginPage/>} />
                 <Route path="/dashboard/" element={<DashboardPage />}>
                     <Route index element={<ContextMovieCard />} />
                     <Route path="moviedetails/:movieId" element={<MovieDetails />} />
