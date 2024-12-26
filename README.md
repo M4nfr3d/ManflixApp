@@ -18,5 +18,12 @@ a que GitHub pages no maneja un servidor backend para manejar las rutas
 
 _Al final reconstruye la aplicacion: yarn build
 
+# Para desplegar en gitHub pages
+_ En el archivo vite.config.js:
+
+base: "/ManflixApp/",
+  build: {
+    outDir: './docs'
+  }
 
 
